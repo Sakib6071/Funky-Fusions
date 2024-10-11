@@ -2,30 +2,96 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funky Fusions</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funky Fusions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body>
-    
-<header>
+<body class="bg-base-100 text-black">
+  <header>
+    <!-- navbar -->
+    <div class="navbar bg-base-100 max-w-7xl mx-auto">
+      <div class="navbar-start basis-11/12">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="text-lg menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow montserrat font-medium">
+            <li><a>Home</a></li>
+            <li><a>Shop</a></li>
+            <li><a>Service</a></li>
+            <li><a>About</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <a href="#home" class="text-3xl font-bold bodoni-moda text-blue-700">Funky Fusions</a>
+      </div>
+  
 
-</header>
-<main>
+      <div class="navbar-end basis-1/12">
+        <div class="navbar-center hidden lg:flex">
+          <ul class="text-lg menu menu-horizontal px-1 montserrat gap-5 mr-6 font-medium">
+            <li><a>Home</a></li>
+            <li><a>Shop</a></li>
+            <li><a>Service</a></li>
+            <li><a>About</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <img class="w-8" src="resources/Images/shopping-bag.png" alt="">
+      </div>
+    </div>
 
-</main>
-<footer>
+    <!-- Hero -->
+    <div class="carousel w-full">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img
+          src="resources/Images/carousel/hero1.png"
+          class="w-full h-[700px] md:h-[600px] object-cover object-top" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img
+          src="resources/Images/carousel/hero2.jpg"
+          class="w-full h-[700px] md:h-[600px] object-cover object-top" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img
+          src="resources/Images/carousel/hero3.jpg"
+          class="w-full h-[700px] md:h-[600px] object-cover object-top" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      
+    </div>
 
-</footer>
+  </header>
+  <main>
+
+  </main>
+  <footer>
+
+  </footer>
 </body>
 
 </html>
