@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Funky Fusions</title>
+  <link rel="shortcut icon" href="resources/Images/ring.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -27,7 +28,8 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </div>
-          <ul tabindex="0" class="text-lg menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow montserrat font-medium">
+          <ul tabindex="0"
+            class="text-lg menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow montserrat font-medium">
             <li><a>Home</a></li>
             <li><a>Shop</a></li>
             <li><a>Service</a></li>
@@ -37,7 +39,7 @@
         </div>
         <a href="#home" class="text-3xl font-bold bodoni-moda text-blue-700">Funky Fusions</a>
       </div>
-  
+
 
       <div class="navbar-end basis-1/12">
         <div class="navbar-center hidden lg:flex">
@@ -56,41 +58,239 @@
     <!-- Hero -->
     <div class="carousel w-full">
       <div id="slide1" class="carousel-item relative w-full">
-        <img
-          src="resources/Images/carousel/hero1.png"
-          class="w-full h-[700px] md:h-[600px] object-cover object-top" />
+        <img src="resources/Images/carousel/hero1.png" class="w-full h-[700px] md:h-[600px] object-cover object-top" />
         <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <a href="#slide3" class="btn btn-circle">❮</a>
           <a href="#slide2" class="btn btn-circle">❯</a>
         </div>
       </div>
       <div id="slide2" class="carousel-item relative w-full">
-        <img
-          src="resources/Images/carousel/hero2.jpg"
-          class="w-full h-[700px] md:h-[600px] object-cover object-top" />
+        <img src="resources/Images/carousel/hero2.jpg" class="w-full h-[700px] md:h-[600px] object-cover object-top" />
         <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <a href="#slide1" class="btn btn-circle">❮</a>
           <a href="#slide3" class="btn btn-circle">❯</a>
         </div>
       </div>
       <div id="slide3" class="carousel-item relative w-full">
-        <img
-          src="resources/Images/carousel/hero3.jpg"
-          class="w-full h-[700px] md:h-[600px] object-cover object-top" />
+        <img src="resources/Images/carousel/hero3.jpg" class="w-full h-[700px] md:h-[600px] object-cover object-top" />
         <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <a href="#slide2" class="btn btn-circle">❮</a>
           <a href="#slide1" class="btn btn-circle">❯</a>
         </div>
       </div>
-      
+
     </div>
 
   </header>
   <main>
+    <section id="shop" class="max-w-7xl mx-auto">
+      <h2 class="text-2xl md:text-4xl text-center text-blue-900 font-bold mt-16 mb-5">Shop by Jewelry Type</h2>
+      <div class="items grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-3 mb-20">
+        <div class="item flex flex-col items-center">
+          <img class="block" src="resources/Images/type/i1.png" alt="item">
+          <p class="mt-2 font-semibold">EARRINGS</p>
+        </div>
+        <div class="item flex flex-col items-center">
+          <img class="block" src="resources/Images/type/i2.png" alt="item">
+          <p class="mt-2 font-semibold">NECKLACES</p>
+        </div>
+        <div class="item flex flex-col items-center">
+          <img class="block" src="resources/Images/type/i3.png" alt="item">
+          <p class="mt-2 font-semibold">BRACELETS</p>
+        </div>
+        <div class="item flex flex-col items-center">
+          <img class="block" src="resources/Images/type/i4.png" alt="item">
+          <p class="mt-2 font-semibold">ALL RINGS</p>
+        </div>
+        <div class="item flex flex-col items-center">
+          <img class="block" src="resources/Images/type/i5.png" alt="item">
+          <p class="mt-2 font-semibold uppercase text-center">engagement rings</p>
+        </div>
+      </div>
+    </section>
+    <section id="handicraft" class="bg-blue-900 flex flex-col md:flex-row">
+      <div class="info flex-1 text-white md:pl-24 p-5 flex flex-col justify-center gap-5">
+        <h2 class="uppercase montserrat font-bold text-4xl md:text-6xl">Hand Crafted<br>fine pieces.</h2>
+        <p class="montserrat font-normal text-lg">We also firmly believed that our customers deserved more choices,
+          straightforward information and legendary service.</p>
 
+        <div>
+          <!-- Open the modal using ID.showModal() method -->
+          <button class="btn btn-info bg-white text-blue-950 text-lg" onclick="my_modal_1.showModal()">Learn
+            More</button>
+          <dialog id="my_modal_1" class="modal">
+            <div class="modal-box">
+              <h3 class="text-lg font-bold text-black">Thanks For Exploring</h3>
+              <p class="py-4 text-black">Coming Soon . . .</p>
+              <div class="modal-action">
+                <form method="dialog">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn">Close</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
+        </div>
+      </div>
+      <div class="img flex-1">
+        <img class="w-full" src="resources/Images/handi.png" alt="handicraft">
+      </div>
+
+    </section>
+    <section id="latest" class="max-w-7xl mx-auto">
+      <h2 class="text-2xl md:text-4xl text-center text-blue-900 font-bold mt-20 mb-10">OUR LATEST JEWELRY</h2>
+      <div class="items grid grid-cols-1 lg:grid-cols-3 gap-3 mb-5">
+        <div class="item flex flex-col items-center">
+          <img class="block w-full h-[450px] object-cover object-center" src="resources/Images/Latest/l1.png"
+            alt="item">
+        </div>
+        <div class="item flex flex-col items-center">
+          <img class="block w-full h-[450px] object-cover object-center" src="resources/Images/Latest/l2.jpg"
+            alt="item">
+        </div>
+        <div class="item flex flex-col items-center">
+          <img class="block w-full h-[450px] object-cover object-center" src="resources/Images/Latest/l3.jpg"
+            alt="item">
+        </div>
+      </div>
+      <div class="text-center">
+        <div>
+          <!-- Open the modal using ID.showModal() method -->
+          <button class="btn btn-neutral bg-blue-900  text-white text-lg" onclick="my_modal_2.showModal()">Learn
+            More</button>
+          <dialog id="my_modal_2" class="modal">
+            <div class="modal-box">
+              <h3 class="text-lg font-bold text-black">Thanks For Exploring</h3>
+              <p class="py-4 text-black">These are the only latest item at that time.</p>
+              <div class="modal-action">
+                <form method="dialog">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn btn-error">Close</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
+        </div>
+      </div>
+    </section>
+    <section id="review" class="max-w-7xl mx-auto">
+      <h2 class="text-2xl md:text-4xl text-center text-blue-900 font-bold mt-24 mb-10 uppercase">Customer reviews</h2>
+      <div class="items grid grid-cols-1 lg:grid-cols-3 gap-7 gap-y-10 mb-5">
+        <div class="item flex flex-col items-center shadow-md p-5">
+          <div class="w-full flex">
+            <img class="w-8" src="resources/Images/quote.png" alt="">
+          </div>
+          <p class="mt-2 font-medium text-lg text-black italic">Great variety of cuts and amazing customer service.
+            Helped to find the perfect ring and helped me to personalize it a little more. <br> -Mariyam Nisa</p>
+        </div>
+        <div class="item flex flex-col items-center shadow-md p-5">
+          <div class="w-full flex">
+            <img class="w-8" src="resources/Images/quote.png" alt="">
+          </div>
+          <p class="mt-2 font-medium text-lg text-black italic">Great variety of cuts and amazing customer service.
+            Helped to find the perfect ring and helped me to personalize it a little more. <br> -Mariyam Nisa</p>
+        </div>
+        <div class="item flex flex-col items-center shadow-md p-5">
+          <div class="w-full flex">
+            <img class="w-8" src="resources/Images/quote.png" alt="">
+          </div>
+          <p class="mt-2 font-medium text-lg text-black italic">Great variety of cuts and amazing customer service.
+            Helped to find the perfect ring and helped me to personalize it a little more. <br> -Mariyam Nisa</p>
+        </div>
+
+      </div>
+      <div class="text-center mb-28">
+        <div>
+          <!-- Open the modal using ID.showModal() method -->
+          <button class="btn btn-neutral bg-blue-900 text-white text-lg" onclick="my_modal_3.showModal()">See
+            More</button>
+          <dialog id="my_modal_3" class="modal">
+            <div class="modal-box">
+              <h3 class="text-lg font-bold text-black">Thanks For Exploring</h3>
+              <p class="py-4 text-black">More review will be include soon . . .</p>
+              <div class="modal-action">
+                <form method="dialog">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn btn-error">Close</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="max-w-7xl mx-auto">
+      <h2 class="text-2xl md:text-4xl text-center text-blue-900 font-bold mt-20 mb-10">OUR SERVICES</h2>
+      <div class="items grid grid-cols-1 lg:grid-cols-3 gap-3 gap-y-10 mb-5">
+        <div class="item flex flex-col items-center">
+          <img class="block w-full h-[450px] object-cover object-center" src="resources/Images/service/s1.png"
+            alt="item">
+          <p class="mt-2 font-semibold text-lg text-blue-900">JEWELRY REPAIR</p>
+        </div>
+        <div class="item flex flex-col items-center">
+          <img class="block w-full h-[450px] object-cover object-right" src="resources/Images/service/s2.png"
+            alt="item">
+          <p class="mt-2 font-semibold text-lg text-blue-900">RING SIZING</p>
+        </div>
+        <div class="item flex flex-col items-center">
+          <img class="block w-full h-[450px] object-cover object-right" src="resources/Images/service/s3.png"
+            alt="item">
+          <p class="mt-2 font-semibold text-lg text-blue-900">JEWELRY POLISHING</p>
+        </div>
+      </div>
+      <div class="text-center mb-20">
+        <div>
+          <!-- Open the modal using ID.showModal() method -->
+          <button class="btn btn-neutral bg-blue-900 text-white text-lg" onclick="my_modal_4.showModal()">Learn
+            More</button>
+          <dialog id="my_modal_4" class="modal">
+            <div class="modal-box">
+              <h3 class="text-lg font-bold text-black">What service you need?</h3>
+              <p class="py-4 text-black">Call for details</p>
+              <div class="modal-action">
+                <form method="dialog">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn btn-error">Close</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer>
-
+  <footer class="bg-blue-200">
+    <section id="footer" class="max-w-7xl mx-auto">
+      <div class="hero">
+        <div class="hero-content flex-col lg:flex-row bg-white rounded-lg mt-16">
+          <img
+            src="resources/Images/getintouc.png"
+            class="max-w-sm rounded-lg shadow-2xl basis-1/2" />
+          <div class="basis-1/2">
+            <h1 class="text-5xl font-bold">Stay in touch?</h1>
+            <p class="py-6">
+              Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.
+            </p>
+            <div>
+              <!-- Open the modal using ID.showModal() method -->
+              <button class="btn btn-neutral bg-blue-900 text-white text-xl" onclick="my_modal_5.showModal()">Subscribe</button>
+              <dialog id="my_modal_5" class="modal">
+                <div class="modal-box">
+                  <h3 class="text-lg font-bold text-black">Thanks For Subscribing</h3>
+                  <p class="py-4 text-black">We will inform you about the update product and offer</p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn btn-error">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </footer>
 </body>
 
